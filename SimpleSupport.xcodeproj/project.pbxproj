@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9633F9D51F279D6E002670C5 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633F9D41F279D6E002670C5 /* CoreDataHelper.swift */; };
 		963847831F2650D10011ABE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963847821F2650D10011ABE9 /* AppDelegate.swift */; };
 		963847851F2650D10011ABE9 /* SpellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963847841F2650D10011ABE9 /* SpellerViewController.swift */; };
 		963847881F2650D10011ABE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963847861F2650D10011ABE9 /* Main.storyboard */; };
@@ -14,9 +15,13 @@
 		9638478D1F2650D10011ABE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9638478C1F2650D10011ABE9 /* Assets.xcassets */; };
 		963847901F2650D10011ABE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9638478E1F2650D10011ABE9 /* LaunchScreen.storyboard */; };
 		9638479C1F2671A00011ABE9 /* SpellerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638479B1F2671A00011ABE9 /* SpellerTableViewCell.swift */; };
+		96C7DEDA1F2B79F400D50E98 /* CurrentWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7DED91F2B79F400D50E98 /* CurrentWordViewController.swift */; };
+		96C7DEDC1F2B7A5100D50E98 /* LettersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7DEDB1F2B7A5100D50E98 /* LettersTableView.swift */; };
+		96D1F3381F2A38F200B21AD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D1F3371F2A38F200B21AD2 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9633F9D41F279D6E002670C5 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHelper.swift; path = SimpleSupport/CoreDataHelper.swift; sourceTree = "<group>"; };
 		9638477F1F2650D10011ABE9 /* SimpleSupport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSupport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		963847821F2650D10011ABE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		963847841F2650D10011ABE9 /* SpellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellerViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +31,9 @@
 		9638478F1F2650D10011ABE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		963847911F2650D10011ABE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9638479B1F2671A00011ABE9 /* SpellerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellerTableViewCell.swift; sourceTree = "<group>"; };
+		96C7DED91F2B79F400D50E98 /* CurrentWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWordViewController.swift; sourceTree = "<group>"; };
+		96C7DEDB1F2B7A5100D50E98 /* LettersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LettersTableView.swift; sourceTree = "<group>"; };
+		96D1F3371F2A38F200B21AD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D1F3381F2A38F200B21AD2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9633F9D61F279D73002670C5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9633F9D41F279D6E002670C5 /* CoreDataHelper.swift */,
+			);
+			name = Helpers;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		963847761F2650D10011ABE9 = {
 			isa = PBXGroup;
 			children = (
 				963847811F2650D10011ABE9 /* SimpleSupport */,
 				963847801F2650D10011ABE9 /* Products */,
+				96D1F3361F2A38F200B21AD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +77,7 @@
 		963847811F2650D10011ABE9 /* SimpleSupport */ = {
 			isa = PBXGroup;
 			children = (
+				9633F9D61F279D73002670C5 /* Helpers */,
 				963847821F2650D10011ABE9 /* AppDelegate.swift */,
 				963847981F2651190011ABE9 /* Controllers */,
 				963847971F2650FB0011ABE9 /* Storyboards */,
@@ -82,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				963847841F2650D10011ABE9 /* SpellerViewController.swift */,
+				96C7DED91F2B79F400D50E98 /* CurrentWordViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -90,8 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				9638479B1F2671A00011ABE9 /* SpellerTableViewCell.swift */,
+				96C7DEDB1F2B7A5100D50E98 /* LettersTableView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		96D1F3361F2A38F200B21AD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96D1F3371F2A38F200B21AD2 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9633F9D51F279D6E002670C5 /* CoreDataHelper.swift in Sources */,
 				963847851F2650D10011ABE9 /* SpellerViewController.swift in Sources */,
+				96C7DEDC1F2B7A5100D50E98 /* LettersTableView.swift in Sources */,
 				963847831F2650D10011ABE9 /* AppDelegate.swift in Sources */,
 				9638478B1F2650D10011ABE9 /* SimpleSupport.xcdatamodeld in Sources */,
+				96C7DEDA1F2B79F400D50E98 /* CurrentWordViewController.swift in Sources */,
 				9638479C1F2671A00011ABE9 /* SpellerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +364,7 @@
 				963847961F2650D10011ABE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -11,4 +11,5 @@ import UIKit
 class SpellerTableViewCell: UITableViewCell {
     @IBOutlet weak var spellerItem: UILabel!
     
+    
 }
